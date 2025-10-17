@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>収支を追加</h2>
+<form method="post">
+    <label>日付: <input type="date" name="date" required></label><br>
+    <label>カテゴリ: <input type="text" name="category"></label><br>
+    <label>内容: <input type="text" name="description"></label><br>
+    <label>種別: 
+        <select name="type" required>
+            <option value="収入">収入</option>
+            <option value="支出">支出</option>
+        </select>
+    </label><br>
+    <label>金額: <input type="number" name="amount" required></label><br>
+    <button type="submit">追加</button>
+</form>
+{% endblock %}

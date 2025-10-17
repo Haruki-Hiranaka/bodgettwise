@@ -1,0 +1,3 @@
+# BudgetWise - 個人資産管理アプリ
+
+BudgetWiseは、PythonとFlaskで実装された個人の収入・支出管理アプリです...

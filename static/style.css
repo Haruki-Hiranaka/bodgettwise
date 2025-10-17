@@ -1,0 +1,7 @@
+body { font-family: sans-serif; background: #f4f4f4; color: #333; margin: 0; }
+header { background: #4682b4; color: white; padding: 1rem; }
+nav a { color: white; margin-right: 1rem; }
+main { padding: 1rem; background: white; max-width: 800px; margin: auto; }
+table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
+footer { text-align: center; padding: 1rem; font-size: 0.8rem; color: #666; background: #eee; }

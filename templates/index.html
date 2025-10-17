@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>収支一覧</h2>
+<p><strong>合計収入:</strong> {{ income }} 円</p>
+<p><strong>合計支出:</strong> {{ expense }} 円</p>
+<p><strong>残高:</strong> {{ balance }} 円</p>
+
+<table>
+    <thead>
+        <tr><th>日付</th><th>カテゴリ</th><th>内容</th><th>種別</th><th>金額</th></tr>
+    </thead>
+    <tbody>
+        {% for t in transactions %}
+        <tr>
+            <td>{{ t.Date }}</td>
+            <td>{{ t.Category }}</td>
+            <td>{{ t.Description }}</td>
+            <td>{{ t.Type }}</td>
+            <td>{{ t.Amount }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
